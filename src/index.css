@@ -1,5 +1,5 @@
 .header{
-  height: 70px;
+  height: 15vh;
   width: 100%;
   display: flex;
   align-items: center;
@@ -34,16 +34,15 @@
 }
 .footer{
   height: 25vh;
+  padding:5%;
   display: flex;
   padding: 2px;
   text-align: center;
+  color: aliceblue;
+  bottom: 100%;
+  background-color: rgb(9, 35, 90);
 }
-.stack{
-  width:33%;
-}
-.part{
-  width:34%;
-}
-.algo{
-  width:33%;
+.login-content{
+  display: flex;
+  text-align: center;
 }
