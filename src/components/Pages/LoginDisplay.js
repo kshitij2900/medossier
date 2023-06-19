@@ -1,30 +1,28 @@
 import React from 'react'
-import DoctorLogin from './DoctorLogin'
-import PatientLogin from './PatientLogin'
-// import PatientLogin from './PatientLogin'
+import { Outlet, useNavigate } from 'react-router-dom'
 // import DoctorLogin from './DoctorLogin'
-// {/* <PatientLogin/>
-// <DoctorLogin/> */}
+// import PatientLogin from './PatientLogin'
+
 
 export default function LoginDisplay() {
+    const navigate= useNavigate();
     return (<>
-        <DoctorLogin/>
-    {/* ,marginTop:'2rem' */}
-    {/* <div className="login-content"style={{height:'100vh'}}>
-    <div className="left" style={{width:'49%', marginLeft:'5%',marginRight:'2%',padding:'2%',}}>
-        <h3  style={{height:'40%'}}>For Doctors</h3>
-        <button className="btn btn-primary mx-2 my-2">Login</button> 
-        <span>with <br /> AIMC Registration Number<br /> or, <br /> </span>
-        <button className="btn btn-primary my-2">Sign Up</button>
-    </div>
-    <div className="right" style={{width:'49%', marginRight:'5%',marginLeft:'2%',padding:'2%'}}>
-        <h3  style={{height:'60%'}}>For Patients </h3>
-        <button className="btn btn-primary mx-2">Login</button>
-        <button className="btn btn-primary">Sign Up</button>
-    </div>
-    </div> */}
-        <PatientLogin/>
-
+    <div className="flex h-screen relative bg-LandingPageBK ">
+        <div className=" w-1/2 h-screen mt-32">
+        <h1 className='mt-20 text-center text-white text-3xl'>For Doctors</h1>
+        <button type="button" className="text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 w-44 h-12 ml-72 mt-32 text-center " onClick={()=>navigate('/doctorlogin')}> Login </button>
+        </div>
+        <div className=" w-1/2 h-screen mt-32 ">
+        <h1 className='mt-20 text-center text-white text-3xl'>For Patients</h1>
+        <button type="button" className="text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 w-44 h-12 ml-72 mt-32 text-center " onClick={()=>navigate('/patientlogin')}> Login </button>
+        </div>
+        </div>
+        <Outlet/>
     </>
     )
 }
+// {/* <div className="px-80 m- sm:px-36 py-10 flex h-screen">
+//         {/* <DoctorLogin/> */}
+//         {/* <PatientLogin/> */}
+//         {/* <h4 className="text-xl">otp system</h4> */}
+//     </div> */}
