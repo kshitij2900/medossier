@@ -9,6 +9,11 @@ import SignupPatient from './components/Pages/SignupPatient';
 import DoctorLogin from './components/Pages/DoctorLogin';
 import PatientLogin from './components/Pages/PatientLogin';
 import Drawer from './components/Layout/Drawer';
+import UserDashboard from './components/Pages/UserDashboard';
+import PatientDataForm from './components/Pages/PatientDataForm';
+import AnalysisDisplay from './components/Pages/AnalysisDisplay';
+import DoctorDashboard from './components/Pages/DoctorDashboard';
+import Forum from './components/Pages/Forum';
 // import Home from './components/Home';
 function App() {
   return (<>
@@ -20,10 +25,15 @@ function App() {
       <Route path="profile" element={<Drawer/>} />
       <Route path="doctorsignup" element={<SignUpDoctor />} />
       {/* </Route> */}
-      {/* </Route> */}
       <Route path="patientlogin" element={<PatientLogin />} />
-      <Route path="patientsignup" element={<SignupPatient />} />
+      <Route path="patientlogin/userdashboard" element={<UserDashboard />} />
+      <Route path="doctorlogin/doctordashboard" element={<DoctorDashboard />} />
+      <Route path="/analysisdisplay" element={<AnalysisDisplay />} />
       {/* </Route> */}
+      <Route path="patientdataform" element={<PatientDataForm />} />
+      {/* </Route> */}
+      <Route path="patientsignup" element={<SignupPatient />} />
+      <Route path="forum" element={<Forum />} />
       {/* </Route> */}
     </Routes>
     <Footer />

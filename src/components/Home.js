@@ -14,3 +14,8 @@ const Home = () => {
 }
 
 export default Home
+
+
+//view option in table
+// show analysis page 
+

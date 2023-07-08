@@ -2,7 +2,7 @@ import React from 'react'
 
 const SignUpDoctor = () => {
     return (
-        <div >
+        <div className=' px-28 bg-LandingPageBK ' >
             <h1 className='text-2xl'>
                 Signup for doctors
             </h1>

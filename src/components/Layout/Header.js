@@ -1,5 +1,5 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import logo from './logoresponsive.svg';
 import { useNavigate } from 'react-router-dom';
 // import logo2 from './logoresponsive2.svg'
@@ -10,10 +10,10 @@ export default function Header() {
         <>
             <nav className="bg-white border-gray-200 dark:bg-black sticky top-0 z-20">
                 <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-                    <a href="/" className="flex items-center">
+                    <Link to="/" className="flex items-center">
                         <img src={logo} className="h-10 mr-3" alt="Flowbite Logo" />
                         <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-pink-400">Medossier</span>
-                    </a>
+                    </Link>
                     <div className="flex items-center md:order-2">
                         <button onClick={()=>navigate('profile')} type="button" className="flex mr-3 text-sm bg-gray-800 rounded-full md:mr-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600" id="user-menu-button" aria-expanded="false" data-dropdown-toggle="user-dropdown" data-dropdown-placement="bottom" >
                             <span className="sr-only">Open user menu</span>
