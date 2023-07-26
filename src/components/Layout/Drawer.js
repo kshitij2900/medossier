@@ -10,7 +10,6 @@ const Drawer = () => {
                     Show drawer with backdrop
                 </button>
             </div>
-
             {/* // <!--drawer component-- > */}
             <div id="drawer-backdrop" className="fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-white w-80 dark:bg-gray-800" tabIndex="-1" aria-labelledby="drawer-backdrop-label">
                 <h5 id="drawer-backdrop-label" className="text-base font-semibold text-gray-500 uppercase dark:text-gray-400">Menu</h5>
