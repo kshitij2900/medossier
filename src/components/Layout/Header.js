@@ -1,26 +1,31 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import logo from './logoresponsive.svg';
 import { useNavigate } from 'react-router-dom';
 import profilePic from '../resources/profile-logo-placeholder-image.png'
 
 export default function Header() {
+    const [profilebtn,setprofilebtn]=useState('false');
+    const handleclick=()=>{
+        setprofilebtn(!profilebtn);
+        navigate('patientlogin/userdashboard')
+    }
     const navigate = useNavigate();
     return (
         <>
-            <nav className="bg-white border-gray-200 dark:bg-black sticky top-0 z-20">
+            <nav className="bg-green-300 border-b-2 border-green-800  dark:border-black dark:bg-black md:h-[9vh] h-[11vh] md:sticky top-0 z-20">
                 <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                     <Link to="/" className="flex items-center">
-                        <img src={logo} className="h-10 mr-3" alt="Flowbite Logo" />
-                        <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-pink-400">Medossier</span>
+                        <img src={logo} className="h-10 mr-3" alt="Medossier Logo" />
+                        <span className="self-center text-2xl text-green-950 font-semibold whitespace-nowrap dark:text-pink-400">Medossier</span>
                     </Link>
                     <div className="flex items-center md:order-2">
-                        <button onClick={() => navigate('patientlogin/userdashboard')} type="button" className="flex mr-3 text-sm bg-gray-800 rounded-full md:mr-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600" id="user-menu-button" aria-expanded="false" data-dropdown-toggle="user-dropdown" data-dropdown-placement="bottom" >
+                        <button onClick={() => handleclick()} type="button" className="flex mr-3 text-sm bg-gray-100 dark:bg-gray-800 rounded-full md:mr-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600" id="user-menu-button" aria-expanded="false" data-dropdown-toggle="user-dropdown" data-dropdown-placement="bottom" >
                             <span className="sr-only">Open user menu</span>
                             <img className="w-8 h-8 rounded-full" src={profilePic} alt='' />
                         </button>
                         {/* <!-- Dropdown menu --> */}
-                        <div className="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700 dark:divide-gray-600" id="user-dropdown">
+                        <div className={`z-55 ${profilebtn?"hidden":""} my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700 dark:divide-gray-600" id="user-dropdown`}>
                             <div className="px-4 py-3">
                                 <span className="block text-sm text-gray-900 dark:text-white">Bonnie Green</span>
                                 <span className="block text-sm  text-gray-500 truncate dark:text-gray-400">name@flowbite.com</span>
@@ -44,7 +49,6 @@ export default function Header() {
                     <div className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="mobile-menu-2">
                         <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-black dark:border-gray-700">
                             <li className=' text-2xl text-pink-400'>
-
                             </li>
                         </ul>
                     </div>

@@ -2,100 +2,100 @@ import React from 'react'
 import img1 from '../resources/analysis (1).jpg'
 const AnalysisDisplay = () => {
     return (
-        <div className='w-full bg-LandingPageBK p-24 grid grid-cols-2 md:grid-cols-4 gap-10' >
-            <div className="max-w-sm h-72 w-72 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 bg-LandingPageBK ">
+        <div className='w-full bg-white dark:bg-LandingPageBK px-[2vw] py-[2vh] grid grid-cols-2 md:grid-cols-4 gap-[3vh] md:gap-[6vh]' >
+            <div className="max-w-sm md:h-[39vh] w-[45vw] md:w-[19vw] bg-green-100 border border-green-800 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 dark:bg-LandingPageBK ">
                 <a href="/">
                     <img className="rounded-t-lg" src={img1} alt="" />
-                    <div className="p-3">
-                        <p className="mb-3 font-normal text-gray-700 dark:text-white">Date: <br />Doctor: <br />Specialisation </p>
+                    <div className="p-[1vh]">
+                        <p className=" mb-[1vh] text-xs md:text-base font-normal text-gray-700 dark:text-white">Date: <br/>Doctor: <br/>Specialisation: </p>
                     </div>
                 </a>
             </div>
-            <div className="max-w-sm h-72 w-72 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 bg-LandingPageBK ">
+            <div className="max-w-sm md:h-[39vh] w-[45vw] md:w-[19vw] bg-green-100 border border-green-800 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 dark:bg-LandingPageBK ">
                 <a href="/">
                     <img className="rounded-t-lg" src={img1} alt="" />
-                    <div className="p-3">
-                        <p className="mb-3 font-normal text-gray-700 dark:text-white">Date: <br />Doctor: <br />Specialisation </p>
+                    <div className="p-[1vh]">
+                        <p className=" mb-[1vh] text-xs md:text-base font-normal text-gray-700 dark:text-white">Date: <br/>Doctor: <br/>Specialisation: </p>
                     </div>
                 </a>
             </div>
-            <div className="max-w-sm h-72 w-72 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 bg-LandingPageBK ">
+            <div className="max-w-sm md:h-[39vh] w-[45vw] md:w-[19vw] bg-green-100 border border-green-800 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 dark:bg-LandingPageBK ">
                 <a href="/">
                     <img className="rounded-t-lg" src={img1} alt="" />
-                    <div className="p-3">
-                        <p className="mb-3 font-normal text-gray-700 dark:text-white">Date: <br />Doctor: <br />Specialisation </p>
+                    <div className="p-[1vh]">
+                        <p className=" mb-[1vh] text-xs md:text-base font-normal text-gray-700 dark:text-white">Date: <br/>Doctor: <br/>Specialisation: </p>
                     </div>
                 </a>
             </div>
-            <div className="max-w-sm h-72 w-72 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 bg-LandingPageBK ">
+            <div className="max-w-sm md:h-[39vh] w-[45vw] md:w-[19vw] bg-green-100 border border-green-800 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 dark:bg-LandingPageBK ">
                 <a href="/">
                     <img className="rounded-t-lg" src={img1} alt="" />
-                    <div className="p-3">
-                        <p className="mb-3 font-normal text-gray-700 dark:text-white">Date: <br />Doctor: <br />Specialisation </p>
+                    <div className="p-[1vh]">
+                        <p className=" mb-[1vh] text-xs md:text-base font-normal text-gray-700 dark:text-white">Date: <br/>Doctor: <br/>Specialisation: </p>
                     </div>
                 </a>
             </div>
-            <div className="max-w-sm h-72 w-72 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 bg-LandingPageBK ">
+            <div className="max-w-sm md:h-[39vh] w-[45vw] md:w-[19vw] bg-green-100 border border-green-800 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 dark:bg-LandingPageBK ">
                 <a href="/">
                     <img className="rounded-t-lg" src={img1} alt="" />
-                    <div className="p-3">
-                        <p className="mb-3 font-normal text-gray-700 dark:text-white">Date: <br />Doctor: <br />Specialisation </p>
+                    <div className="p-[1vh]">
+                        <p className=" mb-[1vh] text-xs md:text-base font-normal text-gray-700 dark:text-white">Date: <br/>Doctor: <br/>Specialisation: </p>
                     </div>
                 </a>
             </div>
-            <div className="max-w-sm h-72 w-72 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 bg-LandingPageBK ">
+            <div className="max-w-sm md:h-[39vh] w-[45vw] md:w-[19vw] bg-green-100 border border-green-800 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 dark:bg-LandingPageBK ">
                 <a href="/">
                     <img className="rounded-t-lg" src={img1} alt="" />
-                    <div className="p-3">
-                        <p className="mb-3 font-normal text-gray-700 dark:text-white">Date: <br />Doctor: <br />Specialisation </p>
+                    <div className="p-[1vh]">
+                        <p className=" mb-[1vh] text-xs md:text-base font-normal text-gray-700 dark:text-white">Date: <br/>Doctor: <br/>Specialisation: </p>
                     </div>
                 </a>
             </div>
-            <div className="max-w-sm h-72 w-72 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 bg-LandingPageBK ">
+            <div className="max-w-sm md:h-[39vh] w-[45vw] md:w-[19vw] bg-green-100 border border-green-800 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 dark:bg-LandingPageBK ">
                 <a href="/">
                     <img className="rounded-t-lg" src={img1} alt="" />
-                    <div className="p-3">
-                        <p className="mb-3 font-normal text-gray-700 dark:text-white">Date: <br />Doctor: <br />Specialisation </p>
+                    <div className="p-[1vh]">
+                        <p className=" mb-[1vh] text-xs md:text-base font-normal text-gray-700 dark:text-white">Date: <br/>Doctor: <br/>Specialisation: </p>
                     </div>
                 </a>
             </div>
-            <div className="max-w-sm h-72 w-72 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 bg-LandingPageBK ">
+            <div className="max-w-sm md:h-[39vh] w-[45vw] md:w-[19vw] bg-green-100 border border-green-800 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 dark:bg-LandingPageBK ">
                 <a href="/">
                     <img className="rounded-t-lg" src={img1} alt="" />
-                    <div className="p-3">
-                        <p className="mb-3 font-normal text-gray-700 dark:text-white">Date: <br />Doctor: <br />Specialisation </p>
+                    <div className="p-[1vh]">
+                        <p className=" mb-[1vh] text-xs md:text-base font-normal text-gray-700 dark:text-white">Date: <br/>Doctor: <br/>Specialisation: </p>
                     </div>
                 </a>
             </div>
-            <div className="max-w-sm h-72 w-72 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 bg-LandingPageBK ">
+            <div className="max-w-sm md:h-[39vh] w-[45vw] md:w-[19vw] bg-green-100 border border-green-800 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 dark:bg-LandingPageBK ">
                 <a href="/">
                     <img className="rounded-t-lg" src={img1} alt="" />
-                    <div className="p-3">
-                        <p className="mb-3 font-normal text-gray-700 dark:text-white">Date: <br />Doctor: <br />Specialisation </p>
+                    <div className="p-[1vh]">
+                        <p className=" mb-[1vh] text-xs md:text-base font-normal text-gray-700 dark:text-white">Date: <br/>Doctor: <br/>Specialisation: </p>
                     </div>
                 </a>
             </div>
-            <div className="max-w-sm h-72 w-72 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 bg-LandingPageBK ">
+            <div className="max-w-sm md:h-[39vh] w-[45vw] md:w-[19vw] bg-green-100 border border-green-800 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 dark:bg-LandingPageBK ">
                 <a href="/">
                     <img className="rounded-t-lg" src={img1} alt="" />
-                    <div className="p-3">
-                        <p className="mb-3 font-normal text-gray-700 dark:text-white">Date: <br />Doctor: <br />Specialisation </p>
+                    <div className="p-[1vh]">
+                        <p className=" mb-[1vh] text-xs md:text-base font-normal text-gray-700 dark:text-white">Date: <br/>Doctor: <br/>Specialisation: </p>
                     </div>
                 </a>
             </div>
-            <div className="max-w-sm h-72 w-72 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 bg-LandingPageBK ">
+            <div className="max-w-sm md:h-[39vh] w-[45vw] md:w-[19vw] bg-green-100 border border-green-800 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 dark:bg-LandingPageBK ">
                 <a href="/">
                     <img className="rounded-t-lg" src={img1} alt="" />
-                    <div className="p-3">
-                        <p className="mb-3 font-normal text-gray-700 dark:text-white">Date: <br />Doctor: <br />Specialisation </p>
+                    <div className="p-[1vh]">
+                        <p className=" mb-[1vh] text-xs md:text-base font-normal text-gray-700 dark:text-white">Date: <br/>Doctor: <br/>Specialisation: </p>
                     </div>
                 </a>
             </div>
-            <div className="max-w-sm h-72 w-72 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 bg-LandingPageBK ">
+            <div className="max-w-sm md:h-[39vh] w-[45vw] md:w-[19vw] bg-green-100 border border-green-800 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 dark:bg-LandingPageBK ">
                 <a href="/">
                     <img className="rounded-t-lg" src={img1} alt="" />
-                    <div className="p-3">
-                        <p className="mb-3 font-normal text-gray-700 dark:text-white">Date: <br />Doctor: <br />Specialisation </p>
+                    <div className="p-[1vh]">
+                        <p className=" mb-[1vh] text-xs md:text-base font-normal text-gray-700 dark:text-white">Date: <br/>Doctor: <br/>Specialisation: </p>
                     </div>
                 </a>
             </div>
