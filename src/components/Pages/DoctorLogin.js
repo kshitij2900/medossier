@@ -5,7 +5,7 @@ export default function DoctorLogin() {
     const navigate=useNavigate();
     return (
         <>
-        <div className="md:h-screen dark:bg-LandingPageBK m-[2vw] flex items-center justify-center">
+        <div className="md:h-screen dark:bg-LandingPageBK p-[2vw] flex items-center justify-center">
             <div className="w-full dark:bg-LandingPageBK max-w-sm p-4 shadow-2xl bg-green-200 border border-green-600 rounded-lg  sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700">
                 <form className="space-y-6" action="#">
                     <h5 className="text-xl font-medium text-green-900 dark:text-white">Doctor login </h5>
