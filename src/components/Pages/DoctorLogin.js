@@ -1,21 +1,45 @@
-import React from 'react'
-import { Link, useNavigate } from 'react-router-dom'
+import React, { useState } from 'react'
+import { Link, useNavigate } from 'react-router-dom';
+import { useDispatch } from "react-redux";
+import {doctorlogin} from "../../services/operations/authApi"
+
 
 export default function DoctorLogin() {
     const navigate=useNavigate();
+    const dispatch = useDispatch()
+    const [formData, setFormData] = useState({
+      email: "",
+      password: "",
+    })
+  
+    // const [showPassword, setShowPassword] = useState(false)
+  
+    const { email, password } = formData
+  
+    const handleOnChange = (e) => {
+      setFormData((prevData) => ({
+        ...prevData,
+        [e.target.name]: e.target.value,
+      }))
+    }
+  
+    const handleOnSubmit = (e) => {
+      e.preventDefault()
+      dispatch(doctorlogin(email, password, navigate))
+    }
     return (
         <>
         <div className="md:h-screen dark:bg-LandingPageBK p-[2vw] flex items-center justify-center">
             <div className="w-full dark:bg-LandingPageBK max-w-sm p-4 shadow-2xl bg-green-200 border border-green-600 rounded-lg  sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700">
-                <form className="space-y-6" action="#">
+                <form onSubmit={handleOnSubmit} className="space-y-6" action="#">
                     <h5 className="text-xl font-medium text-green-900 dark:text-white">Doctor login </h5>
                     <div>
                         <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your email</label>
-                        <input type="email" name="email" id="email" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-black dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="name@company.com" required />
+                        <input value={email} onChange={handleOnChange} type="email" name="email" id="email" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-black dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="name@company.com" required />
                     </div>
                     <div>
                         <label htmlFor="password" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your password</label>
-                        <input type="password" name="password" id="password" placeholder="••••••••" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-black dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" required />
+                        <input value={password} onChange={handleOnChange} type="password" name="password" id="password" placeholder="••••••••" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-black dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" required />
                     </div>
                     <div className="flex items-start">
                         <div className="flex items-start">
@@ -26,7 +50,7 @@ export default function DoctorLogin() {
                         </div>
                         <a href="/" className="ml-auto text-sm text-green-700 hover:underline dark:text-pink-500">Lost Password?</a>
                     </div>
-                    <button type="submit" className="text-white w-full bg-gradient-to-r from-green-800 to-green-500 dark:from-purple-500 dark:to-pink-500 hover:bg-gradient-to-l dark:focus:ring-4 dark:focus:outline-none  dark:focus:ring-purple-800 shadow-2xl hover:shadow-none  font-medium rounded-lg text-sm px-5 py-2.5  h-12 mb-[8vh] text-center " onClick={()=>navigate('doctordashboard')}>Login to your account</button>
+                    <button type="submit" className="text-white w-full bg-gradient-to-r from-green-800 to-green-500 dark:from-purple-500 dark:to-pink-500 hover:bg-gradient-to-l dark:focus:ring-4 dark:focus:outline-none  dark:focus:ring-purple-800 shadow-2xl hover:shadow-none  font-medium rounded-lg text-sm px-5 py-2.5  h-12 mb-[8vh] text-center " >Login to your account</button>
                     <div className="text-sm font-medium text-gray-500 dark:text-gray-300" >
                         Not registered? <Link to="/doctorsignup" className="text-green-700 hover:underline dark:text-pink-500">Create account</Link>
                     </div>

@@ -7,7 +7,7 @@ import { Outlet, useNavigate } from 'react-router-dom'
 export default function LoginDisplay() {
     const navigate= useNavigate();
     return (<>
-    <div className="flex md:flex-row flex-col justify-center items-center h-screen relative dark:bg-LandingPageBK pb-[4vh] ">
+    <div className="flex md:flex-row flex-col justify-center items-center md:h-screen h-[90vh] relative dark:bg-LandingPageBK pb-[4vh] ">
         <div className=" flex flex-col h-[76vh] mx-[4vw] md:ml-[4vw] md:mr-[2vw] w-[84vw] flex-column justify-center items-center border-2 rounded-3xl mt-[4vh] md:mt-0 border-green-700 dark:border-none bg-green-200 shadow-2xl dark:shadow-none dark:bg-transparent">
         <h1 className='mt-[1vh] text-center dark:text-white text-green-800 text-3xl md:text-6xl'>For Doctors</h1>
         <p className=' text-xl dark:text-white text-green-800 text-center mt-[3vh] mb-[3vh] '>I am here to... <br /> Watch my patient's recovery</p>

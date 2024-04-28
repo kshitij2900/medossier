@@ -15,6 +15,7 @@ import AnalysisDisplay from './components/Pages/AnalysisDisplay';
 import DoctorDashboard from './components/Pages/DoctorDashboard';
 import Forum from './components/Pages/Forum';
 // import Home from './components/Home';
+// import rootReducer from './reducer';
 function App() {
   return (<>
     <Header />
@@ -32,8 +33,8 @@ function App() {
       {/* </Route> */}
       <Route path="patientdataform" element={<PatientDataForm />} />
       {/* </Route> */}
-      <Route path="patientsignup" element={<SignupPatient />} />
-      <Route path="forum" element={<Forum />} />
+      <Route path="/patientsignup" element={<SignupPatient />} />
+      <Route path="/forum" element={<Forum />} />
       {/* </Route> */}
     </Routes>
     <Footer />
