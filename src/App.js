@@ -20,7 +20,7 @@ function App() {
   return (<>
     <Header />
     <Routes>
-      <Route path="/" element={<Body />} />
+      <Route path="/" element={<Body/>} />
       {/* </Route> */}
       <Route path="profile" element={<Drawer/>} />
       <Route path="login" element={<LoginDisplay />} />
